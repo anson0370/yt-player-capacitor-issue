@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.c_darkmode {
+  --cc-btn-primary-bg: theme('colors.violet.500');
+  --cc-btn-primary-text: white;
+  --cc-btn-primary-hover-bg: theme('colors.violet.400');
+}
+
+.disable-hover {
+  pointer-events: none;
+}
+
+@layer base {
+  * {
+    @apply focus-visible:outline-none;
+  }
+}
+
+:root {
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --say: calc(var(--sat) + var(--sab));
+  --sax: calc(var(--sal) + var(--sar));
+}

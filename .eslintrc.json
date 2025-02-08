@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "semi": ["warn", "always"],
+    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "curly": ["warn", "multi-line"]
+  }
+}
